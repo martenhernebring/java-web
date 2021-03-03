@@ -1,4 +1,4 @@
-package org.yrgo.util;
+    package org.yrgo.util;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -14,7 +14,7 @@ public class CVFetcher{
   public CVFetcher(){
     db = new Database(DB_FILE);
   }
-  public List<JobExperience>getJobs(){
+  public List<JobExperience> getJobs(){
     List<JobExperience> list = new ArrayList<>();
     try{
       ResultSet rs = db.query(JOB_QUERY);

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <CV>
   <JOB>
-    <EMPLOYER>test</EMPLOYER>
-    <TITLE>test</TITLE>
-    <DESCRIPTION>test</DESCRIPTION>
+    <EMPLOYER end="2016-02-28 00:00:00" start="2016-01-01 00:00:00">ITHS</EMPLOYER>
+    <TITLE>Database teacher</TITLE>
+    <DESCRIPTION>Teacher for a Database course</DESCRIPTION>
   </JOB>
   <JOB>
-    <EMPLOYER>test</EMPLOYER>
-    <TITLE>test</TITLE>
-    <DESCRIPTION>test</DESCRIPTION>
+    <EMPLOYER end="2016-12-31 00:00:00" start="2016-06-01 00:00:00">GU</EMPLOYER>
+    <TITLE>Database teacher</TITLE>
+    <DESCRIPTION>Lecturer for an introductory Java course etc</DESCRIPTION>
   </JOB>
   <JOB>
-    <EMPLOYER>test</EMPLOYER>
-    <TITLE>test</TITLE>
-    <DESCRIPTION>test</DESCRIPTION>
+    <EMPLOYER end="2017-06-30 00:00:00" start="2017-01-01 00:00:00">Yrgo</EMPLOYER>
+    <TITLE>Java teacher</TITLE>
+    <DESCRIPTION>Teacher for a Java course</DESCRIPTION>
   </JOB>
 </CV>
