@@ -37,21 +37,3 @@ public class JSONProducer{
     }
   }
 }
-/*
-  // JSONObject is a builder, so put() and accumulate() returns "this":
-      JSONObject jo = new JSONObject();
-      jo.put("firstName","Hanky")
-        .put("lastName","Sandycleavage")
-        .put("age",65)
-        .put("streetAddress","Skidrow 88")
-        .put("State","VGR")
-        .put("postalCode","66613")
-        .accumulate("phoneNumbers", new JSONObject().put("Mobile", "08sdfs"))
-        .accumulate("phoneNumbers", new JSONObject().put("Home", "031.1231"));
-      String json = jo.toString(2); // indent steps: 2
-      */
-    }catch(JSONException e){
-      System.err.println("Error creating JSON: " + e.getMessage());
-    }
-  }
-}
