@@ -35,7 +35,7 @@ public class DataServlet extends HttpServlet {
       response.setContentType("application/xml");
       writeXML(page);
     } else if (format.equals("html")) {
-      response.setContentType("application/html");
+      response.setContentType("text/html");
       writeHTML(page);
     } else {
       response.setContentType("text/html");
