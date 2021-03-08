@@ -22,18 +22,21 @@ public class DataServlet extends HttpServlet {
     
     StringBuilder page = new StringBuilder(253);
     String format = request.getParameter("format");
-    if (format != null && format.equals("json")) {
-      response.setContentType("application/json");
-      writeJSON(page);
-    } else if (format != null && format.equals("csv")) {
-      response.setContentType("text/csv");
-      writeCSV(page);
-    } else if (format != null && format.equals("xml")) {
-      response.setContentType("application/xml");
-      writeXML(page);
-    } else if (format == null) {
+    if (format == null) {
       response.setContentType("text/html");
       page.append("<html><body><h1>Missing parameter: format</h1></body></html>");
+    } else if (format.equals("json")) {
+      response.setContentType("application/json");
+      writeJSON(page);
+    } else if (format.equals("csv")) {
+      response.setContentType("text/csv");
+      writeCSV(page);
+    } else if (format.equals("xml")) {
+      response.setContentType("application/xml");
+      writeXML(page);
+    } else if (format.equals("html")) {
+      response.setContentType("application/html");
+      writeHTML(page);
     } else {
       response.setContentType("text/html");
       page.append("<html><body><h1>Unknown format: "+format+"</h1></body></html>");
@@ -44,6 +47,13 @@ public class DataServlet extends HttpServlet {
     out.close();
   }
   
+  private void writeHTML(StringBuilder page) {
+    page.append("<html><head><title>Hanky contact info</title><style>td{ vertical-align: top; }</style></head>");
+    page.append("<body><table><tr><th>first name</th><th>last name</th><th>age</th><th>address></th><th>state</th>");
+    page.append("<th>phone numbers</th></tr><tr><td>Hanky</td><td>Sandycleavage</td><td>65</td><td>Skidrow 88</td>");
+    page.append("<td>VGR</td><td><ul><li>0700123321</li><li>031-90 51 06</li></ul></td></tr></table></body><html>");
+  }
+
   private void writeXML(StringBuilder page) {
     page.append("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n")
       .append("<address>\n")
