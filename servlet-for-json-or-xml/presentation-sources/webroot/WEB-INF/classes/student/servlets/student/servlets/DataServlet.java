@@ -8,6 +8,11 @@ import javax.servlet.http.*;
 
 public class DataServlet extends HttpServlet {
 
+  /**
+   *
+   */
+  private static final long serialVersionUID = 701746234538337433L;
+
   public void init() throws ServletException {
     // Do initiation here...
   }
